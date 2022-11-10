@@ -1,0 +1,158 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-size: 1rem;
+  color: #404040;
+  text-align: center;
+  font-family: "Source Sans Pro", sans-serif;
+  max-width: 960px;
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 2.25rem;
+  color: white;
+  font-weight: 300;
+}
+h2 {
+  font-size: 1.3125rem;
+}
+
+span {
+  font-weight: 900;
+}
+
+.image-side {
+  background-image: url(./images/dark-ribs.jpg);
+  background-size: cover;
+  background-color: #404040;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  padding: 0 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 50vh;
+}
+
+.form-side {
+  padding: 2em 1em;
+}
+
+.image-side > *,
+.form-side > * {
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.above-heading {
+  color: #f18119;
+  margin: 0;
+  padding-top: 2px;
+  font-weight: 900;
+  font-size: 0.625rem;
+  text-transform: uppercase;
+  border-top: 5px solid #f18119;
+  border-image: linear-gradient(to left, #ff713b, #ffa51d) 1;
+}
+
+.under-heading {
+  color: #f18119;
+  font-weight: 900;
+  font-size: 1.3125rem;
+  text-transform: uppercase;
+}
+.form-heading {
+  margin-top: 1.5rem;
+  margin-bottom: 0px;
+}
+.form-register {
+  color: #f18119;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin-top: 0;
+}
+
+.form-text {
+  margin: 0 1.3rem;
+  display: flex;
+  flex-direction: column;
+  color: #5a5a5a;
+  font-weight: 300;
+  margin-bottom: 5px;
+}
+
+form {
+  width: 80%;
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+input {
+  font-family: inherit;
+  text-align: inherit;
+  margin-bottom: 0.75em;
+  padding: 0.25em;
+  border: 1px solid #404040;
+}
+input,
+.btn {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 1em 1.5em;
+  font-size: 0.625rem;
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: 1px;
+  border: 0;
+  cursor: pointer;
+  background: linear-gradient(to left, #ff713b, #ffa51d);
+  color: white;
+  transform: scale(1);
+  transition: transform 250ms;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+}
+.form-information {
+  color: #989898;
+  font-size: 0.625rem;
+}
+
+/* media queries */
+
+@media (min-width: 500) {
+  body {
+    display: flex;
+    flex-direction: row;
+    font-size: 1.125rem;
+  }
+  .image-side {
+    width: 50%;
+  }
+
+  .form-side {
+    width: 50%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  h1 {
+    font-size: 3.5rem;
+  }
+  h2,
+  .under-heading {
+    font-size: 1.75rem;
+  }
+}
